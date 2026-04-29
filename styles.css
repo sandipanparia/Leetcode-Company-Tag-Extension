@@ -1,0 +1,56 @@
+/* styles.css */
+.lc-header-tags-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-left: 16px;
+  vertical-align: middle;
+  padding: 4px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  animation: lc-fade-in 0.3s ease-out;
+}
+
+@keyframes lc-fade-in {
+  from { opacity: 0; transform: translateX(-5px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.lc-header-tag {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #eff2f6;
+  white-space: nowrap;
+}
+
+.lc-header-logo {
+  width: 16px;
+  height: 16px;
+  border-radius: 2px;
+  object-fit: contain;
+  background: white;
+  padding: 1px;
+}
+
+.lc-header-sep {
+  width: 1px;
+  height: 14px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.lc-header-freq {
+  font-size: 11px;
+  color: #ffa116;
+  font-weight: 800;
+  margin-left: 4px;
+}
+
+/* Hide the old floating card */
+#lc-company-tag-viewer {
+  display: none;
+}
